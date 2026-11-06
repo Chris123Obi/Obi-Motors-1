@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 60px;
+    padding-left: 10px;
+}
+
+.navbar{
+    background-color: black;
+    display: flex;
+    height: 60px;
+    justify-content: space-between
+}
+
+ul.components li a{
+    font-size: 50px;
+    text-decoration: none;
+    color: brown;
+    padding: 20px;
+    justify-content: center;
+}
+
+ul.components li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.hero{
+    position: relative;
+    background-image: url(Futuristic\ Sports\ Sedan\ at\ Sunset.png);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.518);
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+}
+
+div.hero p.p1{
+    color: brown;
+    font-size: 50px;
+}
+
+div.hero p.p2{
+    color: brown;
+    font-size: 30px;
+}
+
+.button{
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: brown;
+    transition: all ease-in-out;
+    border-radius: 2rem;
+    border: none;
+}
+
+.button:hover{
+    background-color: brown;
+    color: black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 10px;
+    background-color: black;
+}
+
+div.card img{
+    width: 100%;
+}
+
+.cardcontent{
+    padding: 15px;
+}
+
+.cardtitle{
+    font-weight: bold;
+    font-size: 25px;
+    color:   brown
+}
+
+.cardbody{
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+div.cardcontent a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: brown;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+}
+
+.clubtitle{
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
+.aboutcontent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.ceoimage{
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.imgcontainer{
+    width: 400px;
+    padding-right: 2rem;
+
+}
+
+.aboutcontainer{
+    width: 400px;
+}
+
+div.aboutcontainer p.title1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+div.aboutcontainer p.title2{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+div#about h2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    background-color: black;
+    color: aliceblue;
+}
+
+.footer{
+    background-color:  brown;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 20px;
+}
+
+.fa-instagram{
+    padding: 0rem 1.5rem;
+}
+
+.fa-instagram{
+    color: black !important;
+}
+
+@media(max-width:800px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imgcontainer{
+        width: 600px;
+        padding: 1rem;
+    }
+
+    .aboutcontainer{
+        width: 600px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width:600px){
+    ul.menu li a{
+        font-size: 25px;
+    }
+
+    div.hero p.p1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    div.hero p.p2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+     .imgcontainer{
+        width: 500px;
+        padding: 1rem;
+    }
+
+    .aboutcontainer{
+        width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .copyright{
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .fa-instagram{
+        padding: 0rem 0.5rem;
+    }
+}
+
+@media(max-width:400px){
+     .aboutcontainer{
+        width: 350px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width:365px){
+    .logo{
+        width: 50px;
+    }
+
+     ul.menu li a{
+        font-size: 20px;
+    }
+
+    .navbar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .aboutcontainer{
+        width: 250px;
+        margin-bottom: 2rem;
+    }
+
+       .imgcontainer{
+        width: 250px;
+        padding: 1rem;
+    }
+
+    .footer{
+        padding: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright{
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
